@@ -35,12 +35,4 @@ public class PaymentPage extends BasePage{
         return getConfirmationOnBuy.getText();
 
     }
-
-   /* @FindBy(xpath = "//*[text()='Oscar']")
-    WebElement logoOscar;
-
-    public PaymentPage clickLogoHP() {
-        click(logoOscar);
-        return this;
-    }*/
 }
