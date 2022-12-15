@@ -1,4 +1,4 @@
-package com.telran.tests;
+package com.telran.oscar.tests;
 
 import com.telran.pages.*;
 import com.telran.pages.data.PositiveAllertsData;
@@ -23,7 +23,7 @@ public class AddBookTest extends TestBase{
         new BuyBookFormPage(driver).fillRequiredFields(UserData.FIRST_NAME,
                 UserData.LAST_NAME,UserData.ADDRESS,UserData.CITY,UserData.POST_CODE);
         new BuyBookFormPage(driver).selectCountry("United States").clickContinueBtn();
-        new PaymentPage(driver).clickContinueButton().clickPlaceOrderBtn().clickLogoHP();
+        new PaymentPage(driver).clickContinueButton().clickPlaceOrderBtn();
         Assert.assertTrue(new PaymentPage(driver).verifyOrderConfirmText().contains(PositiveAllertsData.CONFIRMATION_OF_ORDER));
 
     }

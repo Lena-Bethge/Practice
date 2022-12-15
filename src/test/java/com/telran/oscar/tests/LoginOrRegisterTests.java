@@ -1,4 +1,4 @@
-package com.telran.tests;
+package com.telran.oscar.tests;
 
 import com.telran.pages.HomePage;
 import com.telran.pages.LoginOrRegisterPage;

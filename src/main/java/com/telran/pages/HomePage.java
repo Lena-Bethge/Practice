@@ -58,4 +58,11 @@ public class HomePage extends BasePage{
         return new AllProductsPage(driver);
     }
 
+    @FindBy(xpath = "//*[.='Register'][1]")
+    WebElement alertRegister;
+
+    public HomePage verifyTextUserAlreadyExist() {
+        click(alertRegister);
+        return this;
+    }
 }
