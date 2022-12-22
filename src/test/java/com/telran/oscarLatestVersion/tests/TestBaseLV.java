@@ -14,9 +14,9 @@ public class TestBaseLV {
     @BeforeMethod
     public void init() {
         driver = new ChromeDriver();
-        driver.get("https://latest.oscarcommerce.com");
+        driver.get("https://latest.oscarcommerce.com/en-gb");
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
     }
 
     @AfterMethod(enabled = false)

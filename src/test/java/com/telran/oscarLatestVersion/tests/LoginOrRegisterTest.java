@@ -1,12 +1,9 @@
 package com.telran.oscarLatestVersion.tests;
 
-import com.telran.oscar.tests.TestBase;
 import com.telran.pages.HomePage;
 import com.telran.pages.LoginOrRegisterPage;
 import com.telran.pages.data.NegativeAllertsData;
 import com.telran.pages.data.PositiveAllertsData;
-import com.telran.pages.data.UserData;
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -16,7 +13,7 @@ public class LoginOrRegisterTest extends TestBaseLV {
 
 
     @BeforeMethod
-    public void ensurePreconditions() {
+    public void ensurePrecondition() {
         new HomePage(driver).clickOnLoginLink();
     }
 

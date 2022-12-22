@@ -14,7 +14,19 @@ public class AllProductsPage extends BasePage{
     WebElement addToBasket;
 
     public AllProductsPage clickOnAddToBasketButton() {
-        click(addToBasket);
+        clickWithJSExecutor(addToBasket,200,0);
+        return this;
+    }
+
+    @FindBy(xpath = "//form[@action='/en-gb/basket/add/209/']")
+    WebElement addFirstBook;
+
+    @FindBy(xpath = "//form[@action='/en-gb/basket/add/190/']")
+    WebElement addLastBook;
+
+    public AllProductsPage addToBasket() {
+        clickWithJSExecutor(addFirstBook,200,0);
+        clickWithJSExecutor(addLastBook,500,0);
         return this;
     }
 }

@@ -3,10 +3,10 @@ package com.telran.pages.data;
 public class UserData {
 
 
-    public static final String USER_REGISTER_EMAIL = "project+1@gmail.com";
+    public static final String USER_REGISTER_EMAIL = "project+2@gmail.com";
     public static final String USER_REGISTER_PASSWORD = "1234-Qwer";
     public static final String USER_REGISTER_CONFIRM_PASSWORD = "1234-Qwer";
-    public static final String USER_EMAIL = "project+1@gmail.com";
+    public static final String USER_EMAIL = "project+2@gmail.com";
     public static final String USER_PASSWORD = "1234-Qwer";
     public static final String USER_INVALID_PASSWORD = "01234";
 

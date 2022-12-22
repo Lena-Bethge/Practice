@@ -22,7 +22,7 @@ public class LoginOrRegisterTests extends TestBase{
     public void registerPositiveTest() {
        new LoginOrRegisterPage(driver).registration(UserData.USER_REGISTER_EMAIL,
                UserData.USER_REGISTER_PASSWORD, UserData.USER_REGISTER_CONFIRM_PASSWORD);
-       new HomePage(driver).verifyTextThanksForRegistering (PositiveAllertsData.CONFIRMATION_OF_REGISTER);
+       new HomePage(driver).verifyTextThanksForRegistering(PositiveAllertsData.CONFIRMATION_OF_REGISTER);
 
      }
 
